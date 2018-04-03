@@ -21,7 +21,7 @@ fs.writeFile('./test.json', stringifyFile, function(err, data) {
     if (err) throw err;
     console.log('file updated');
     stringifyFile = req.params.note 
-    res.send('req.params.note'); 
+    res.send(req.params.note); 
 });
 });
 
